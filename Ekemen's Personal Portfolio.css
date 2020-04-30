@@ -69,7 +69,7 @@ figure {
   padding: 3vmin;
 }
 
-#projects img {
+#projects img, #projects iframe {
   height: auto;
   border: dotted 1px;
   box-shadow: 3px 3px lightpink;
