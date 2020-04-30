@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ferhat EKEMEN</title>
+    <link rel="stylesheet" type="text/css" href="Ekemen's Personal Portfolio.css">
+    <script type="text/javascript" src="C:\Users\Alexi\Desktop\Coding\FCC training\js\Intermediate Algorithm Scripting - Arguments-optional.js"></script>
+    <script type="text/javascript" src="C:\Users\Alexi\Desktop\Coding\FCC training\js\Intermediate Algorithm Scripting - Drop-it.js"></script>
+<!---- <script type="text/javascript" src="C:\Users\Alexi\Desktop\Coding\FCC training\js\Intermediate Algorithm Scripting - Make-a-person.js"></script> -->
+    <script type="text/javascript" src="C:\Users\Alexi\Desktop\Coding\FCC training\js\Intermediate Algorithm Scripting - Smallest-common-multiple.js"></script>
+    <script type="text/javascript" src="C:\Users\Alexi\Desktop\Coding\FCC training\js\Intermediate Algorithm Scripting - Sorted-union.js"></script>
+    <script type="text/javascript" src="C:\Users\Alexi\Desktop\Coding\FCC training\js\Intermediate Algorithm Scripting - Sum-all-odd-fibonacci-numbers.js"></script>    
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <a href="#welcome-section">
+                <li>About</li>
+            </a>
+            <a href="#projects">
+                <li>Work</li>
+            </a>
+            <a href="#contact">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <section id="welcome-section">
+            <h1>Hey I am Ferhat</h1>
+            <br>
+            <p><em>a web developer</em></p>
+        </section>
+
+               
+        <section id="projects">
+
+            <figure id="functions">
+                <h1>Functions</h1>
+                <hr><br>
+                <p>
+                addTogether(<span id="firstNum">6</span>, <span id="secondNum">11</span>) =
+
+                    <script>
+                        var firstNum = parseInt(document.getElementById("firstNum").innerHTML),
+                            secondNum = parseInt(document.getElementById("secondNum").innerHTML);
+                            document.write(addTogether(firstNum, secondNum));
+                    </script>
+                <br>
+                <br />                
+                dropElements([<span id="dropElementsArr">1,3,4,5,9,13</span>], <span id="dropElementsFunc">function(n){return n &lt 4}</span>) =
+
+                    <script>
+                        var arr = document.getElementById('dropElementsArr').innerHTML.split(','),
+                            func = new Function("return " + document.getElementById("dropElementsFunc").innerHTML)(),
+                            func2 = function(n){return n > 4};
+                            document.write(dropElements(arr, func2));
+                    </script>
+                <br>
+                <br />                
+                smallestCommons(<span id="smallestCommons">12,13,14</span>) =
+
+                    <script>
+                        var arr = document.getElementById('smallestCommons').innerHTML.split(',');
+                        document.write(smallestCommons(arr))
+                    </script>
+                <br>
+                <br />
+                uniteUnique([<span id="uniteUnique1">12,3,5</span>], [<span id="uniteUnique2">12,16,14</span>], [<span id="uniteUnique3">1,7,16,3,5</span>]) =
+                    <script>
+                        var arr1 = document.getElementById('uniteUnique1').innerHTML.split(','),
+                            arr2 = document.getElementById('uniteUnique2').innerHTML.split(','),
+                            arr3 = document.getElementById('uniteUnique3').innerHTML.split(',');
+                            document.write(uniteUnique(arr1,arr2,arr3));
+                    </script>
+                    <br><br>
+
+                sumFibs(<span id="sumFibs">63</span>) =
+
+                <script>
+                    var num = document.getElementById('sumFibs').innerHTML.split(',');
+                    document.write(sumFibs(num))
+                </script>
+            <br>
+            <br />
+                </p>    
+            </figure>
+
+            <figure>
+                <a href="https://codepen.io/ferhat41/full/wvvaejr" class="project-tile" target="_blank">
+                    <img alt="Tribute Page" src="https://screenshot.codepen.io/1747164.wvvaejr.small.8c1a83a5-45c9-4ac6-a8a6-ad9c8e5bc39a.png">
+                    <figcaption><p>&lt</p>Tribute Page<p>/></p></figcaption>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="https://codepen.io/ferhat41/full/YzzXgvw" class="project-tile" target="_blank">
+                    <img alt="Survey" src="https://screenshot.codepen.io/1747164.YzzXgvw.small.621ebf05-2888-4f46-8876-7dd87e8e93a1.png">
+                    <figcaption><p><</p>Survey<p>/></p></figcaption>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="https://codepen.io/ferhat41/full/VwweWzN" target="_blank">
+                    <img alt="Landing Page" src="https://screenshot.codepen.io/1747164.VwweWzN.small.003714d7-429b-4a0d-bda2-f0eceeb7e7cd.png">
+                    <figcaption><p><</p>Landing Page<p>/></p></figcaption>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="https://codepen.io/ferhat41/full/OJJMpeE" target="_blank">
+                    <img alt="Technical Documentation Page" src="https://screenshot.codepen.io/1747164.OJJMpeE.small.126a1ef5-fcbb-4834-ae3d-b9003577f23c.png">
+                    <figcaption><p>&lt;</p>Technical Documentation Page<p>/></p></figcaption>
+                </a>
+            </figure>
+
+        </section>
+
+        <section id="contact">
+            <h1>Let's work together...</h1>
+            <p>How do you take your coffee?</p>
+            <br>
+            <ul>
+                <a href="https://www.facebook.com/ferhatekemen41" target="_blank">
+                    <li>Facebook</li>
+                </a>
+                <a href="https://www.linkedin.com/in/ferhat-ekemen-29abba33/" id="linkedin" target="_blank">
+                    <li>Linkedin</li>
+                </a>
+                <a href="https://github.com/ferhatekemen" target="_blank" id="profile-link">
+                    <li>Github</li>
+                </a>
+            </ul>
+
+        </section>
+    </main>
+    <footer id="footer"><span><em>**Ekemen's portfolio</em></span><!--<span>� created with <a href="codepen.io" target="_blank">Codepoen.io</a></span>--></footer>
+</body>
+
+</html>
