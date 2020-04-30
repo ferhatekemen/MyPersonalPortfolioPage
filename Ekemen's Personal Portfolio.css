@@ -70,7 +70,7 @@ figure {
 }
 
 #projects img, #projects iframe {
-  height: auto;
+  height: 22.464vw;
   border: dotted 1px;
   box-shadow: 3px 3px lightpink;
   width: 40vw;

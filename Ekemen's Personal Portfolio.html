@@ -36,57 +36,7 @@
                
         <section id="projects">
 
-            <figure id="functions">
-                <h1>Functions</h1>
-                <hr><br>
-                <p>
-                addTogether(<span id="firstNum">6</span>, <span id="secondNum">11</span>) =
-
-                    <script>
-                        var firstNum = parseInt(document.getElementById("firstNum").innerHTML),
-                            secondNum = parseInt(document.getElementById("secondNum").innerHTML);
-                            document.write(addTogether(firstNum, secondNum));
-                    </script>
-                <br>
-                <br />                
-                dropElements([<span id="dropElementsArr">1,3,4,5,9,13</span>], <span id="dropElementsFunc">function(n){return n &lt 4}</span>) =
-
-                    <script>
-                        var arr = document.getElementById('dropElementsArr').innerHTML.split(','),
-                            func = new Function("return " + document.getElementById("dropElementsFunc").innerHTML)(),
-                            func2 = function(n){return n > 4};
-                            document.write(dropElements(arr, func2));
-                    </script>
-                <br>
-                <br />                
-                smallestCommons(<span id="smallestCommons">12,13,14</span>) =
-
-                    <script>
-                        var arr = document.getElementById('smallestCommons').innerHTML.split(',');
-                        document.write(smallestCommons(arr))
-                    </script>
-                <br>
-                <br />
-                uniteUnique([<span id="uniteUnique1">12,3,5</span>], [<span id="uniteUnique2">12,16,14</span>], [<span id="uniteUnique3">1,7,16,3,5</span>]) =
-                    <script>
-                        var arr1 = document.getElementById('uniteUnique1').innerHTML.split(','),
-                            arr2 = document.getElementById('uniteUnique2').innerHTML.split(','),
-                            arr3 = document.getElementById('uniteUnique3').innerHTML.split(',');
-                            document.write(uniteUnique(arr1,arr2,arr3));
-                    </script>
-                    <br><br>
-
-                sumFibs(<span id="sumFibs">63</span>) =
-
-                <script>
-                    var num = document.getElementById('sumFibs').innerHTML.split(',');
-                    document.write(sumFibs(num))
-                </script>
-            <br>
-            <br />
-                </p>    
-            </figure>
-
+            
             <figure>
                 <a href="https://codepen.io/ferhat41/full/wvvaejr" class="project-tile" target="_blank">
                     <img alt="Tribute Page" src="https://screenshot.codepen.io/1747164.wvvaejr.small.8c1a83a5-45c9-4ac6-a8a6-ad9c8e5bc39a.png">
@@ -115,11 +65,25 @@
                 </a>
             </figure>
 
-<!-- Copy and Paste Me -->
-<!-- style="height: 100%; width: 100%; border: 0;" 
-title="exercise-tracker-ferhat on Glitch"
-      allow="geolocation; microphone; camera; midi; vr; encrypted-media"
-      -->
+            <figure>
+                <a href='https://url-shortener-ferhat.glitch.me/' target='_blank'>
+                <iframe
+                  src="https://url-shortener-ferhat.glitch.me/">
+                </iframe>
+                <figcaption><p>&lt;</p>Url Shortener Microservice<p>/></p></figcaption>
+                </a>
+            </figure>
+            
+
+<figure>
+    <a href='https://file-metadata-ferhat41.glitch.me/' target='_blank'>
+    <iframe
+      src="https://file-metadata-ferhat41.glitch.me/">
+    </iframe>
+    <figcaption><p>&lt;</p>File Metadata Microservice<p>/></p></figcaption>
+    </a>
+</figure>
+
 <figure>
     <a href='https://exercise-tracker-ferhat.glitch.me/' target='_blank'>
     <iframe
@@ -128,6 +92,59 @@ title="exercise-tracker-ferhat on Glitch"
     <figcaption><p>&lt;</p>Exercise Tracker<p>/></p></figcaption>
     </a>
 </figure>
+
+<!--
+<figure id="functions">
+    <h1>Functions</h1>
+    <hr><br>
+    <p>
+    addTogether(<span id="firstNum">6</span>, <span id="secondNum">11</span>) =
+
+        <script>
+            var firstNum = parseInt(document.getElementById("firstNum").innerHTML),
+                secondNum = parseInt(document.getElementById("secondNum").innerHTML);
+                document.write(addTogether(firstNum, secondNum));
+        </script>
+    <br>
+    <br />                
+    dropElements([<span id="dropElementsArr">1,3,4,5,9,13</span>], <span id="dropElementsFunc">function(n){return n &lt 4}</span>) =
+
+        <script>
+            var arr = document.getElementById('dropElementsArr').innerHTML.split(','),
+                func = new Function("return " + document.getElementById("dropElementsFunc").innerHTML)(),
+                func2 = function(n){return n > 4};
+                document.write(dropElements(arr, func2));
+        </script>
+    <br>
+    <br />                
+    smallestCommons(<span id="smallestCommons">12,13,14</span>) =
+
+        <script>
+            var arr = document.getElementById('smallestCommons').innerHTML.split(',');
+            document.write(smallestCommons(arr))
+        </script>
+    <br>
+    <br />
+    uniteUnique([<span id="uniteUnique1">12,3,5</span>], [<span id="uniteUnique2">12,16,14</span>], [<span id="uniteUnique3">1,7,16,3,5</span>]) =
+        <script>
+            var arr1 = document.getElementById('uniteUnique1').innerHTML.split(','),
+                arr2 = document.getElementById('uniteUnique2').innerHTML.split(','),
+                arr3 = document.getElementById('uniteUnique3').innerHTML.split(',');
+                document.write(uniteUnique(arr1,arr2,arr3));
+        </script>
+        <br><br>
+
+    sumFibs(<span id="sumFibs">63</span>) =
+
+    <script>
+        var num = document.getElementById('sumFibs').innerHTML.split(',');
+        document.write(sumFibs(num))
+    </script>
+<br>
+<br />
+    </p>    
+</figure>-->
+
 
         </section>
 
