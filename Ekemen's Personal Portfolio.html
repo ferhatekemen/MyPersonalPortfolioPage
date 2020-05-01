@@ -99,7 +99,6 @@
     <hr><br>
     <p>
     addTogether(<span id="firstNum">6</span>, <span id="secondNum">11</span>) =
-
         <script>
             var firstNum = parseInt(document.getElementById("firstNum").innerHTML),
                 secondNum = parseInt(document.getElementById("secondNum").innerHTML);
@@ -108,7 +107,6 @@
     <br>
     <br />                
     dropElements([<span id="dropElementsArr">1,3,4,5,9,13</span>], <span id="dropElementsFunc">function(n){return n &lt 4}</span>) =
-
         <script>
             var arr = document.getElementById('dropElementsArr').innerHTML.split(','),
                 func = new Function("return " + document.getElementById("dropElementsFunc").innerHTML)(),
@@ -118,7 +116,6 @@
     <br>
     <br />                
     smallestCommons(<span id="smallestCommons">12,13,14</span>) =
-
         <script>
             var arr = document.getElementById('smallestCommons').innerHTML.split(',');
             document.write(smallestCommons(arr))
@@ -133,9 +130,7 @@
                 document.write(uniteUnique(arr1,arr2,arr3));
         </script>
         <br><br>
-
     sumFibs(<span id="sumFibs">63</span>) =
-
     <script>
         var num = document.getElementById('sumFibs').innerHTML.split(',');
         document.write(sumFibs(num))
